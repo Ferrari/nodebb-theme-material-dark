@@ -40,7 +40,7 @@ ul, li {
 }
 
 #main {
-	position:relative
+	position: relative;
 }
 
 #toggle-width {
@@ -80,7 +80,7 @@ a:hover, a:active, a:focus, a:visited {
 
 @media (max-width: @screen-xs-max) {
 	body #content {
-		padding: 15px;
+		padding: 15px 5px;
 	}
 }
 
@@ -94,4 +94,30 @@ a:hover, a:active, a:focus, a:visited {
 	body.sw-toggled #content>.container {
 		width: ~"calc(100% - 30px)";
 	}
+}
+
+.status {
+	&.online {
+		background-color: @material-success;
+		color: @material-success;
+	}
+
+	&.away {
+		background-color: @material-warning;
+		color: @material-warning;
+	}
+
+	&.dnd {
+		background-color: @material-danger;
+		color: @material-danger;
+	}
+
+	&.offline {
+		background-color: #777;
+		color: #777;
+	}
+}
+
+.bootbox {
+	z-index: 100001;
 }

@@ -1,13 +1,20 @@
 .breadcrumb {
-	border:1px solid #212121;
-	border-radius:0;
-	margin-bottom:15px;
-	font-size:13px;
+	border: 1px solid #212121;
+	border-radius: 0;
+	margin-bottom: 15px;
+	font-size: 13px;
     background-color: #212121;
+	
+	li {
+		max-width: 100%;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	}
 }
 
 @media (min-width: @screen-sm-min) {
 	.breadcrumb {
-		padding:10px 20px 11px;
+		padding: 10px 20px 11px;
 	}
 }
